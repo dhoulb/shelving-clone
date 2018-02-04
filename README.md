@@ -1,8 +1,10 @@
 # Shelving: Clone
 
 [![Build Status](https://travis-ci.org/dhoulb/shelving-clone.svg?branch=master)](https://travis-ci.org/dhoulb/shelving-clone)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/shelving-clone)
 
-A simple deep-cloning algorithm. This function only works with JSON-friendly values:
+ **Shelving Clone** is a simple deep-clone algorithm. It only works with JSON-friendly values:
 
 - `null`
 - Finite numbers (e.g. `123` or `45.158`)
@@ -11,7 +13,7 @@ A simple deep-cloning algorithm. This function only works with JSON-friendly val
 - Plain arrays (e.g. arrays whose constructor is `Array`)
 - Plain objects (e.g. objects whose constructor is `Object`)
 
-The function will throw a `CloneError` for values that cannot be represented in JSON, such as:
+It will throw a `CloneError` for values that cannot be represented in JSON, such as:
 
 - `undefined`
 - Infinite numbers (e.g. `Infinity`, `-Infinity` and `NaN`)
