@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dhoulb/shelving-clone.svg?branch=master)](https://travis-ci.org/dhoulb/shelving-clone)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/shelving-clone)
+[![npm](https://img.shields.io/npm/dm/shelving-clone.svg)](https://www.npmjs.com/package/shelving-clone)
 
  **Shelving Clone** is a simple deep-clone algorithm. It only works with JSON-friendly values:
 
