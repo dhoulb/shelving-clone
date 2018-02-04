@@ -48,11 +48,12 @@ original.arr.length === cloned.arr.length; // True.
 
 ## Example: Cloning a primative value
 
-Primative values are not copied by reference in Javascript, so don't need to be cloned. They pass through transparently.
+Primative values are not copied by reference in Javascript (so don't need to be cloned). As you'd expect values pass through `clone()` transparently:
 
 ```js
-const num = 123;
-num === clone(num); // True.
+123 === clone(123); // True.
+true === clone(true); // True.
+'abc' === clone('abc'); // True.
 ```
 
 ## Example: Attempting to clone complex value
@@ -68,7 +69,7 @@ clone(class Dog {}()); // Throws CloneError("Value must be JSON-friendly...").
 
 ## Example: Testing whether value is cloneable
 
-As `clone()` only works on JSON-friendly values, the `cloneable()` function can be used to test whether a value can be cloned _before_ passing it into clone() and throwing an error:
+As `clone()` only works on JSON-friendly values, the `cloneable()` function can be used to test whether a value can be cloned _before_ passing it into `clone()` and throwing an error:
 
 ```js
 import { cloneable } from 'shelving-clone';
